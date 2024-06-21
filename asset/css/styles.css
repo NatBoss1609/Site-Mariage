@@ -1,37 +1,39 @@
 /* GLOBAL */
-*::before::after{
+*::before, *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     font-family: "Prata", serif;
 }
 
 /* COULEURS */
-:root{
+:root {
     --or: #DDBF5D;
     --noir: #000;
     --blanc: #fff;
 }
 
-
 /* HEADER */
-header{
+header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
+    justify-content: center;
+    margin: 20px 0;
+    padding: 20px;
 }
 
-
-
-ul{
+nav ul {
     list-style-type: none;
+    display: flex;
+    gap: 150px; /* Ajustez cette valeur pour définir l'espace entre les liens */
+    padding: 0;
+    margin: 0;
 }
 
-a{
+nav a {
     color: var(--or);
     text-decoration: none;
 }
