@@ -15,3 +15,23 @@ body{
     --noir: #000;
     --blanc: #fff;
 }
+
+
+/* HEADER */
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    color: var(--or);
+    text-decoration: none;
+}
