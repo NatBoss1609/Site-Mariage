@@ -7,7 +7,7 @@
 
 body {
     font-family: "Prata", serif;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 /* COULEURS */
@@ -24,6 +24,7 @@ header {
     justify-content: center;
     margin: 20px 0;
     padding: 20px;
+    background-color: var(--or);
 }
 
 nav ul {
@@ -35,13 +36,13 @@ nav ul {
 }
 
 nav a {
-    color: var(--or);
+    color: var(--blanc);
     text-decoration: none;
 }
 
-
 /* SECTION */
 section {
+    display: flex;
     width: 100%;
     height: auto;
 }
@@ -72,22 +73,40 @@ section {
     text-align: center;
 }
 
-.texte{
-    background-color: #f4f4f4f4;
+.texte {
+    background-color: #f4f4f4;
     padding: 20px 25px;
 }
 
-.texte h2{
+.texte h2 {
     font-family: "Alex Brush", cursive;
 }
 
-.texte img{
+.texte img {
     max-width: 100%;
 }
 
-
 /* ASIDE */
-aside img{
+aside {
+    display: flex;
+    align-items: center;
+    height: 500px; /* Aligne la hauteur de l'aside à la section principale */
+}
+
+aside img {
     max-width: 100%;
-    height: auto;
+    height: 100%; /* S'assure que l'image couvre toute la hauteur de l'aside */
+    object-fit: cover;
+    background-position: center;
+}
+
+
+/* FOOTER */
+footer{
+    background-color:var(--or);
+    padding: 20px;
+}
+
+div p{
+    color: var(--blanc);
 }
