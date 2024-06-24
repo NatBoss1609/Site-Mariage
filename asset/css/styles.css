@@ -137,6 +137,10 @@ footer{
 div p{
     color: var(--blanc);
 }
+footer div a{
+    color: var(--blanc);
+    font-size: 14px;
+}
 
 
 /* RESPONSIVE DESIGN */

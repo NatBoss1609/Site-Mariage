@@ -15,30 +15,82 @@
 </head>
 <body>
     <header>
-        <section>
-            <div class="row">
-                <div class="col-2 offset-1"></div>
-                <div class="col-6 offset-3">
-                    <nav>
-                        <ul>
-                            <li>
-                                <a href="presence.html" title="lien vers la page de présence">PRESENCE</a>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid justify-content-center">
+                    <a class="navbar-brand" href="../../index.html">
+                        <img src="../img/logo_mariage.png" alt="Logo" width="80" height="80" class="d-inline-block align-text-top">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="presence.html" class="nav-link">PRESENCE</a>
                             </li>
-                            <li>
-                                <a href="connexion.html" title="lien vers la page de connexion">CONNEXION</a>
+                            <li class="nav-item">
+                                <a href="infos.html" class="nav-link">INFORMATIONS</a>
                             </li>
                         </ul>
-                    </nav>
+                    </div>
                 </div>
-                
+            </nav>
+        </div>
+    </header>  
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <h2 class="text-center mb-4">Formulaire de Réponse</h2>
+                    <form>
+                        <div class="mb-3">
+                            <label for="nom" class="form-label">Nom</label>
+                            <input type="text" class="form-control" id="nom" name="nom" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="prenom" class="form-label">Prénom</label>
+                            <input type="text" class="form-control" id="prenom" name="prenom" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Adresse e-mail</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="remarque" class="form-label">Remarque</label>
+                            <textarea class="form-control" id="remarque" name="remarque" rows="3"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="choix" class="form-label">Choix</label>
+                            <select class="form-select" id="choix" name="choix" required>
+                                <option value="">Sélectionner...</option>
+                                <option value="journee">Journée</option>
+                                <option value="journee_soir">Journée et soir</option>
+                                <option value="pas_present">Pas présent</option>
+                            </select>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary"
+                                formaction="https://www.w3schools.com/action_page.php">Envoyer</button>
+                            <button type="reset" class="btn btn-secondary">Remettre à zéro</button>
+                        </div>
+                    </form>
+                </div>
             </div>
-        </section>
-    </header>
-    <main>
-
-    </main>
+        </div>
+    </section>
     <footer>
-
+        <div class="row">
+            <div class="col-3 offset-9">
+                <p>
+                    Où : Eglise Saint Remy d'Oupeye (Rue d'Erquy, Oupeye) <br>
+                    Quand : Le 18 Août 2024 <br>
+                    Thème : Or et Argent <br>
+                    <a href="https://www.domaineduchateaudefreux.be/salles/salle-hermes-grande-capacite/">Plus d'infos sur la salle ici</a>
+                </p>
+            </div>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

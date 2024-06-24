@@ -119,3 +119,6 @@ footer{
 div p{
     color: var(--blanc);
 }
+div a{
+    color: var(--blanc);
+}

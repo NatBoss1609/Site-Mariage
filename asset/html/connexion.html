@@ -15,32 +15,70 @@
 </head>
 <body>
     <header>
-        <section>
-            <div class="row">
-                <div class="col-2 offset-1"></div>
-                <div class="col-6 offset-3">
-                    <nav>
-                        <ul>
-                            <li>
-                                <a href="presence.html" title="lien vers la page de présence">PRESENCE</a>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid justify-content-center">
+                    <a class="navbar-brand" href="../../index.html">
+                        <img src="../img/logo_mariage.png" alt="Logo" width="80" height="80" class="d-inline-block align-text-top">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="presence.html" class="nav-link">PRESENCE</a>
                             </li>
-                            <li>
-                                <a href="connexion.html" title="lien vers la page de connexion">CONNEXION</a>
+                            <li class="nav-item">
+                                <a href="infos.html" class="nav-link">INFORMATIONS</a>
                             </li>
                         </ul>
-                    </nav>
+                    </div>
                 </div>
-                
+            </nav>
+        </div>
+    </header>  
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <h2 class="text-center">Connexion</h2>
+                    <form action="https://www.w3schools.com/action_page.php">
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Email</label>
+                            <input type="text" class="form-control" id="username"
+                                placeholder="Entrer votre nom d'utilisateur">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Mot de passe</label>
+                            <input type="password" class="form-control" id="password"
+                                placeholder="Entrer votre mot de passe">
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="button" class="btn btn-primary"
+                                onclick="location.href='presence.html'">Connexion</button>
+                            <button type="button" class="btn btn-secondary"
+                                onclick="location.href='../../index.html'">Retour</button>
+                        </div>
+                    </form>
+                </div>
             </div>
-        </section>
-    </header>
-    <main>
+        </div>
 
-    </main>
+    </section>
     <footer>
-
+        <div class="row">
+            <div class="col-3 offset-9">
+                <p>
+                    Où : Eglise Saint Remy d'Oupeye (Rue d'Erquy, Oupeye) <br>
+                    Quand : Le 18 Août 2024 <br>
+                    Thème : Or et Argent <br>
+                    <a href="https://www.domaineduchateaudefreux.be/salles/salle-hermes-grande-capacite/">Plus d'infos sur la salle ici</a>
+                </p>
+            </div>
+        </div>
     </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
