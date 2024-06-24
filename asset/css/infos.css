@@ -1,21 +1,20 @@
 /* GLOBAL */
-*::before::after{
+*::before, *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     font-family: "Prata", serif;
 }
 
 /* COULEURS */
-:root{
+:root {
     --or: #DDBF5D;
     --noir: #000;
     --blanc: #fff;
 }
-
 
 /* HEADER */
 header {
@@ -25,7 +24,7 @@ header {
     background-size: cover;
 }
 
-.col-6{
+.col-6 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -34,10 +33,14 @@ header {
     background-color: var(--or);
 }
 
+.col-6 img {
+    margin-right: 80px;
+}
+
 nav ul {
     list-style-type: none;
     display: flex;
-    gap: 150px; /* Ajustez cette valeur pour définir l'espace entre les liens */
+    gap: 150px;
     padding: 0;
     margin: 0;
 }
@@ -45,6 +48,19 @@ nav ul {
 nav a {
     color: var(--blanc);
     text-decoration: none;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--blanc);
+    margin: 4px 0;
 }
 
 
@@ -90,7 +106,7 @@ main {
     font-style: italic;
 }
 
-.description button {
+.description a {
     background-color: #d4b24c;
     color: white;
     border: none;
@@ -98,6 +114,7 @@ main {
     font-size: 1em;
     cursor: pointer;
     margin-top: 20px;
+    text-decoration: none;
 }
 
 
@@ -110,4 +127,24 @@ footer{
 
 div p{
     color: var(--blanc);
+}
+
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 800px) {
+    nav ul {
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--or);
+        display: none;
+    }
+    nav ul.nav-active {
+        display: flex;
+    }
+    .menu-toggle {
+        display: flex;
+    }
 }
