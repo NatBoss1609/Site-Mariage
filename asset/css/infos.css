@@ -50,19 +50,6 @@ nav a {
     text-decoration: none;
 }
 
-.menu-toggle {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.menu-toggle .bar {
-    width: 25px;
-    height: 3px;
-    background-color: var(--blanc);
-    margin: 4px 0;
-}
-
 
 /* MAIN */
 main {
@@ -127,24 +114,4 @@ footer{
 
 div p{
     color: var(--blanc);
-}
-
-
-/* RESPONSIVE DESIGN */
-@media (max-width: 800px) {
-    nav ul {
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background-color: var(--or);
-        display: none;
-    }
-    nav ul.nav-active {
-        display: flex;
-    }
-    .menu-toggle {
-        display: flex;
-    }
 }
