@@ -118,3 +118,17 @@ div p{
 div a{
     color: var(--blanc);
 }
+
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 765px){
+    footer p{
+        font-size: 12px;
+    }
+}
+
+@media (max-width : 500px){
+    footer p{
+        font-size: 8px;
+    }
+}
